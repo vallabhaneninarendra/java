@@ -26,11 +26,13 @@ public int getNextSlot()
    {
 	   int next=0;
 	   System.out.println("Avilable cars in parking "+cars.size() );
+
 	   for(int i=1;i<=totalNumberofSlots;i++ )
 	   {	
 		   
 		   if(cars.get(i) == null)
 		   {
+			
 		   System.out.println("Avilable slot is "+i);
 		   return i++;		   
 		   }

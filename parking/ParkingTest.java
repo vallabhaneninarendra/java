@@ -32,6 +32,11 @@ class ParkingTest {
 	    assertEquals(5, slot5);
 	     }
 	
- 
-
+     @Test
+     public void exitCarPark() {
+    	 int slot1 = Controller.parkCar("Blue","AP36N0978");
+ 	     assertEquals(1, slot1);
+    	 Map<Integer, Car> exit =  Controller.unParking(1);   	
+    	 assertEquals(0,exit.size());
+}
 }
