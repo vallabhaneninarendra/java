@@ -7,9 +7,9 @@ public class Controller {
 	
    Map<Integer,Car> cars=new HashMap<Integer,Car>();
    Integer totalNumberofSlots=5;
-   public Controller(int totalNumberofSlots) {
-	   this.totalNumberofSlots = totalNumberofSlots;
-   }
+//   public Controller(int totalNumberofSlots) {
+//	   this.totalNumberofSlots = totalNumberofSlots;
+//   }
 
   public int parkCar(String color,String regNo)
    {
@@ -25,13 +25,14 @@ public class Controller {
 public int getNextSlot()
    {
 	   int next=0;
+	   System.out.println("Avilable cars in parking "+cars.size() );
 	   for(int i=1;i<=totalNumberofSlots;i++ )
 	   {	
-		   System.out.println("Avilable cars in parking "+cars.size() );
+		   
 		   if(cars.get(i) == null)
 		   {
 		   System.out.println("Avilable slot is "+i);
-		   return i;		   
+		   return i++;		   
 		   }
 	   }	   
 	   return next;	   

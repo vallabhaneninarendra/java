@@ -12,7 +12,7 @@ public class CarParking {
 
 		Scanner input = new Scanner(System.in);
 		HashMap<Integer, Car> cars = new HashMap<Integer, Car>();
-		Controller controller=new Controller(10);
+		Controller controller=new Controller();
 		System.out.println("Parking area");
 		
 		while(true)
